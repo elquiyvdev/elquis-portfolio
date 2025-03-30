@@ -1,0 +1,23 @@
+---
+import LinkNav from "./LinkNav.astro";
+---
+<nav class="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 ">
+    <div class="max-w-screen-md md:flex flex-wrap items-center justify-center mx-auto p-2">
+        <div class="hidden w-full md:flex md:w-auto " id="navbar-language">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">
+                <li>
+                    <LinkNav href="#" label="Sobre mi"/> 
+                </li>
+                <li>
+                    <LinkNav href="#skills" label="Habilidades Técnicas" /> 
+                </li>
+                <li>
+                    <LinkNav href="#projects" label="Proyectos"/> 
+                </li>
+                <li>
+                    <LinkNav href="#experience" label="Experiencias"/> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
