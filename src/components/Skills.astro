@@ -3,11 +3,18 @@ import AngularIcon from '../assets/technologies/frontend/AngularIcon.astro';
 import ReactIcon from '../assets/technologies/frontend/ReactIcon.astro';
 import AstroIcon from '../assets/technologies/frontend/AstroIcon.astro';
 
+import LaravelIcon from '../assets/technologies/backend/LaravelIcon.astro';
+import DotnetIcon from '../assets/technologies/backend/DotnetIcon.astro';
+
 import htmlLogo from '../assets/technologies/frontend/html.svg';
 import tailwindLogo from '../assets/technologies/frontend/tailwind.svg';
 import jsLogo from '../assets/technologies/frontend/javascript.svg';
 import cssLogo from '../assets/technologies/frontend/css.svg';
 import typescriptLogo from '../assets/technologies/frontend/typescript.svg';
+
+import phpLogo from '../assets/technologies/backend/phpLogo.svg';
+import csharp from '../assets/technologies/backend/csharp.svg';
+import mysql from '../assets/technologies/backend/mysql.svg';
 
 import FigureMain from './components_skills/FigureMain.astro';
 import SmallLogo from './components_skills/SmallLogo.astro';
@@ -32,5 +39,22 @@ import SmallLogo from './components_skills/SmallLogo.astro';
         <SmallLogo src={jsLogo.src} alt="Logo de JavaScript" title="JS"/>
         <SmallLogo src={tailwindLogo.src} alt="Logo de Tailwind" title="TailwindCSS"/>
         <SmallLogo src={typescriptLogo.src} alt="Logo de Typescript" title="Typescript"/>
+    </div>
+</section>
+
+<section id="backend" class="flex flex-col gap-2 mx-auto px-4 show">
+    <h3 class="text-3xl font-medium text-center">Backend</h3>
+    <div class="flex flex-row flex-wrap justify-center items-center gap-6 mt-4">
+        <FigureMain title="Laravel">
+            <LaravelIcon classAll={"size-28"}/>
+        </FigureMain>
+        <FigureMain title="Dotnet">
+            <DotnetIcon classAll={"size-28"}/>
+        </FigureMain>
+    </div>
+    <div class="flex flex-row flex-wrap justify-center gap-6 items-center py-5 mx-auto">
+        <SmallLogo src={phpLogo.src} alt="Logo de PHP" title="PHP"/>
+        <SmallLogo src={csharp.src} alt="Logo de CSharp" title="CSharp"/>
+        <SmallLogo src={mysql.src} alt="Logo de MySQL" title="MySQL"/>
     </div>
 </section>
