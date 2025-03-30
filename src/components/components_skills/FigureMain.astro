@@ -1,0 +1,7 @@
+---
+const {title} = Astro.props;
+---
+<figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+    <slot/>
+    <h4 class="text-2xl font-normal ">{title}</h4>
+</figure>

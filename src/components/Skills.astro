@@ -8,29 +8,29 @@ import tailwindLogo from '../assets/technologies/frontend/tailwind.svg';
 import jsLogo from '../assets/technologies/frontend/javascript.svg';
 import cssLogo from '../assets/technologies/frontend/css.svg';
 import typescriptLogo from '../assets/technologies/frontend/typescript.svg';
+
+import FigureMain from './components_skills/FigureMain.astro';
+import SmallLogo from './components_skills/SmallLogo.astro';
 ---
 <h2 class="text-4xl font-semibold mb-10 show">Mis Habilidades Técnicas</h2>
-<section id="frontend" class="flex flex-col gap-2 mx-auto show">
-    <h3 class="text-3xl font-medium text-center ">Frontend</h3>
-    <div class="grid grid-cols-3 justify-center items-center mx-auto content-center gap-6 mt-4 object-contain">
-        <figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+<section id="frontend" class="flex flex-col gap-2 mx-auto px-4 show">
+    <h3 class="text-3xl font-medium text-center">Frontend</h3>
+    <div class="flex flex-row flex-wrap justify-center items-center gap-6 mt-4">
+        <FigureMain title="Angular">
             <AngularIcon classAll={"size-28"}/>
-            <h4 class="text-2xl font-normal ">Angular</h4>
-        </figure>
-        <figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+        </FigureMain>
+        <FigureMain title="React">
             <ReactIcon classAll={"size-28"}/>
-            <h4 class="text-2xl font-normal ">React</h4>
-        </figure>
-        <figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+        </FigureMain>
+        <FigureMain title="Astro">
             <AstroIcon classAll={"size-28"}/>
-            <h4 class="text-2xl font-normal ">Astro</h4>
-        </figure>
+        </FigureMain>
     </div>
-    <div class="grid grid-flow-col gap-6 items-center py-5 mx-auto">
-        <img src={htmlLogo.src} alt="" class="w-12">
-        <img src={cssLogo.src} alt="" class="w-12">
-        <img src={jsLogo.src} alt="" class="w-12">
-        <img src={tailwindLogo.src} alt="" class="w-12">
-        <img src={typescriptLogo.src} alt="" class="w-12">
+    <div class="flex flex-row flex-wrap justify-center gap-6 items-center py-5 mx-auto">
+        <SmallLogo src={htmlLogo.src} alt="Logo de Html" title="Html"/>
+        <SmallLogo src={cssLogo.src} alt="Logo de Css" title="CSS"/>
+        <SmallLogo src={jsLogo.src} alt="Logo de JavaScript" title="JS"/>
+        <SmallLogo src={tailwindLogo.src} alt="Logo de Tailwind" title="TailwindCSS"/>
+        <SmallLogo src={typescriptLogo.src} alt="Logo de Typescript" title="Typescript"/>
     </div>
 </section>
