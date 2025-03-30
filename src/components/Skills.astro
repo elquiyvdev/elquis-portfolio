@@ -1,0 +1,36 @@
+---
+import AngularIcon from '../assets/technologies/frontend/AngularIcon.astro';
+import ReactIcon from '../assets/technologies/frontend/ReactIcon.astro';
+import AstroIcon from '../assets/technologies/frontend/AstroIcon.astro';
+
+import htmlLogo from '../assets/technologies/frontend/html.svg';
+import tailwindLogo from '../assets/technologies/frontend/tailwind.svg';
+import jsLogo from '../assets/technologies/frontend/javascript.svg';
+import cssLogo from '../assets/technologies/frontend/css.svg';
+import typescriptLogo from '../assets/technologies/frontend/typescript.svg';
+---
+<h2 class="text-4xl font-semibold mb-10 show">Mis Habilidades Técnicas</h2>
+<section id="frontend" class="flex flex-col gap-2 mx-auto show">
+    <h3 class="text-3xl font-medium text-center ">Frontend</h3>
+    <div class="grid grid-cols-3 justify-center items-center mx-auto content-center gap-6 mt-4 object-contain">
+        <figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+            <AngularIcon classAll={"size-28"}/>
+            <h4 class="text-2xl font-normal ">Angular</h4>
+        </figure>
+        <figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+            <ReactIcon classAll={"size-28"}/>
+            <h4 class="text-2xl font-normal ">React</h4>
+        </figure>
+        <figure class="flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-2 ">
+            <AstroIcon classAll={"size-28"}/>
+            <h4 class="text-2xl font-normal ">Astro</h4>
+        </figure>
+    </div>
+    <div class="grid grid-flow-col gap-6 items-center py-5 mx-auto">
+        <img src={htmlLogo.src} alt="" class="w-12">
+        <img src={cssLogo.src} alt="" class="w-12">
+        <img src={jsLogo.src} alt="" class="w-12">
+        <img src={tailwindLogo.src} alt="" class="w-12">
+        <img src={typescriptLogo.src} alt="" class="w-12">
+    </div>
+</section>
